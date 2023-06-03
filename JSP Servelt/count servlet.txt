@@ -1,0 +1,16 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.Http.*;
+
+class samp extends Httpservlet{
+	int c=0;
+	
+	public void doget( HttpRequest r1, HttpResponse r2){
+	
+		printwriter pw = r2.getwriter();
+		c++;
+		
+		pw.println(c+" Times");
+		pw.close();
+	}
+}
