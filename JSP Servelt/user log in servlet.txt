@@ -1,0 +1,19 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.Http.*;
+
+public class samp extends HttpServlet{
+
+	pubblic void ma(HttpRequest R1, HttpResponse R2){
+		PrintWriter pw = r2.getWriter();
+		String n = r1.getParameter("Uname");
+		String p = r1.getParameter("Password");
+		
+		if(n==p){
+		pw.println("Welcome");
+		}
+		else
+		pw.println("Error");
+	}
+
+}
